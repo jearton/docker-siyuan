@@ -1,5 +1,6 @@
 # docker-siyuan
 
+[![Docker stars](https://img.shields.io/docker/stars/jearton1024/siyuan.svg)](https://hub.docker.com/r/jearton1024/siyuan "Click to view the image on Docker Hub")
 [![Docker pulls](https://img.shields.io/docker/pulls/jearton1024/siyuan.svg)](https://hub.docker.com/r/jearton1024/siyuan "Click to view the image on Docker Hub")
 
 ## Overview
