@@ -1,0 +1,15 @@
+version: '3.9'
+services:
+  siyuan:
+    image: jearton1024/siyuan:latest
+    container_name: siyuan
+    restart: unless-stopped
+    environment:
+      - REFRESH_CRON_JOB=on
+      - REFRESH_CRON_EXPR=1-59/15 * * * *
+    ports:
+      - "6806:6806"
+    volumes:
+      - ~/docker/siyuan/workspace:/siyuan/workspace
+      - ~/docker/siyuan/logs:/siyuan/logs
+    command: ["-workspace=/siyuan/workspace", "-lang=zh_CN"]
