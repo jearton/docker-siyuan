@@ -1,5 +1,7 @@
 # docker-siyuan
 
+[![Docker pulls](https://img.shields.io/docker/pulls/jearton1024/siyuan.svg)](https://hub.docker.com/r/jearton1024/siyuan "Click to view the image on Docker Hub")
+
 ## Overview
 SiYuan docker image based on debian:bullseye-slim, run with root user by default.
 
