@@ -35,7 +35,12 @@ installcronjob() {
 
 uninstallcronjob() {
   echo "Uninstalling cron job"
-  crontab -r
+  set +e
+  crontab -l
+  if [ $? == 0 ]; then
+    crontab -r
+  fi
+  set -e
 }
 
 if [ "$REFRESH_CRON_JOB" = 'on' ]; then
